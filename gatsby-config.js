@@ -1,3 +1,9 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "TakabaudBlog",
@@ -7,8 +13,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: "9g0xohxo5n1k",
-        accessToken: "pBCml_7yW159ECKzgtfbXJgSRuE7EJM5fwaV_Ht4dsA",
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     "gatsby-plugin-sass",
