@@ -4,6 +4,13 @@ module.exports = {
     author: "Takabaud",
   },
   plugins: [
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "9g0xohxo5n1k",
+        accessToken: "pBCml_7yW159ECKzgtfbXJgSRuE7EJM5fwaV_Ht4dsA",
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
