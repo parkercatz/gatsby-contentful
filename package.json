@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "build": "ACTIVE_ENV=contentful gatsby build",
+    "develop": "ACTIVE_ENV=contentful gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -30,6 +30,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "^1.19.1"
   },
   "repository": {
