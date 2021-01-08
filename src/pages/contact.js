@@ -9,11 +9,11 @@ const ContactPage = () => {
       <h1>Contact</h1>
       <h2>
         <a
-          href="https://twitter.com/@takabaud"
+          href="https://twitter.com/@ParkerCatz"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @takabaud
+          @ParkerCatz
         </a>
       </h2>
     </Layout>
